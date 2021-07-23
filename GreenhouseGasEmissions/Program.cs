@@ -99,12 +99,10 @@ namespace GreenhouseGasEmissions.Main
         private static void Initialization(ref Ghg ghg, Helper  helper)
         {
             int yearMin = helper.SetupYearRange().Item1;
-            //ghg.yearFrom = yearMin;
-            ghg.yearFrom = 2000;
+            ghg.yearFrom = yearMin;
 
             int yearMax = helper.SetupYearRange().Item2;
-            //ghg.yearTo = yearMax;
-            ghg.yearTo = 2005;
+            ghg.yearTo = yearMax;
         }
     }
 
